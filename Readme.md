@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Власенко](https://up.htmlacademy.ru/htmlcss/28/user/1387113).
-* Наставник: `Неизвестно`.
+* Наставник: [Атмир Атаев](https://htmlacademy.ru/profile/atmirataev).
 
 ---
 
