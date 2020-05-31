@@ -40,7 +40,8 @@ img {
   height: auto;
 }
 
-ul, p {
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -295,7 +296,7 @@ input::-moz-placeholder {
   height: 45px;
 }
 
-.logged-in li:nth-child(2) {  
+.logged-in li:nth-child(2) {
   margin-top: -30px;
   margin-left: 50px;
 }
@@ -589,7 +590,7 @@ input::-moz-placeholder {
 .catalog-heading {
   width: 940px;
   height: 89px;
-  margin-top: 20px;  
+  margin-top: 20px;
   padding-top: 29px;
   padding-left: 29px;
   background-color: #F2F6F8;
@@ -654,19 +655,35 @@ input::-moz-placeholder {
 }
 
 .item-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  display: grid;
   width: 700px;
+  margin-left: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  list-style: none;
 }
 
 .item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
   width: 220px;
+  min-height: 318px;
   margin: 0;
+  padding-bottom: 21px;
+  text-align: center;
+  border: 1px solid #EAEAEA;
+}
+
+.item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .item h4 {
+  margin: 0;
+  margin-top: 28px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: bold;
@@ -676,6 +693,10 @@ input::-moz-placeholder {
 }
 
 .item .old-price {
+  display: block;
+  width: 141px;
+  height: 38px;
+  padding-top: 10px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: bold;
@@ -687,8 +708,11 @@ input::-moz-placeholder {
 }
 
 .item .new-price {
+  display: block;
   width: 141px;
   height: 38px;
+  padding-top: 10px;
+  margin-top: 13px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: bold;
@@ -702,7 +726,18 @@ input::-moz-placeholder {
   background-repeat: no-repeat;
 }
 
+.item:hover img {
+  display: none;
+}
+
 .buy {
+  display: block;
+  width: 135px;
+  height: 38px;
+  padding-top: 10px;
+  position: absolute;
+  top: 38px;
+  z-index: -1;
   background-color: #63A63E;
   font-family: 'Cuprum';
   font-style: normal;
@@ -712,6 +747,13 @@ input::-moz-placeholder {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+.item:hover .buy,
+.item:hover .to-bookmarks {
+  z-index: 1
 }
 
 .buy:hover {
@@ -723,6 +765,13 @@ input::-moz-placeholder {
 }
 
 .to-bookmarks {
+  display: block;
+  width: 135px;
+  height: 38px;
+  padding-top: 8px;
+  position: absolute;
+  top: 86px;
+  z-index: -1;
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: normal;
@@ -732,6 +781,8 @@ input::-moz-placeholder {
   text-transform: uppercase;
   color: #32425C;
   background-color: var(--basic-white);
+  border-radius: 2px;
+  border: 3px solid var(--basic-green);
 }
 
 .to-bookmarks:active {
@@ -806,7 +857,7 @@ input::-moz-placeholder {
   list-style: none;
   margin: 0;
   padding: 0;
-} 
+}
 
 .footer-nav li,
 .footer-menu li {
