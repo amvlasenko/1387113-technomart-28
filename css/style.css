@@ -620,6 +620,14 @@ input::-moz-placeholder {
   max-width: 220px;
 }
 
+.filter fieldset {
+  display: flex;
+  width: 220px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .filter legend {
   font-family: 'PT Sans';
   font-style: normal;
@@ -639,6 +647,9 @@ input::-moz-placeholder {
 }
 
 .filter-button {
+  display: block;
+  width: 220px;
+  height: 38px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
@@ -647,6 +658,7 @@ input::-moz-placeholder {
   text-transform: uppercase;
   background-color: var(--basic-white);
   color: #000000;
+  border: 1px solid #E5E5E5;
 }
 
 .sorting {
@@ -804,8 +816,7 @@ input::-moz-placeholder {
   justify-content: space-between;
 }
 
-.footer-bottom p,
-.footer-bottom ul {
+.footer-bottom p {
   display: inline-block;
 }
 
@@ -931,6 +942,11 @@ input::-moz-placeholder {
 
 .footer-bottom ul {
   list-style: none;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
 }
 
 .social a {
