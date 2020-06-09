@@ -125,22 +125,28 @@
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
-              <input type="checkbox" name="brandname" id="BOSCH" value="boch" checked>
+              <input type="checkbox" name="brandname" id="BOSCH" value="boch" checked
+                class="visually-hidden filter-input-checkbox">
               <label for="BOSCH">BOSCH</label>
-              <input type="checkbox" name="brandname" id="ИНТЕРСКОЛ" value="interskol">
+              <input type="checkbox" name="brandname" id="ИНТЕРСКОЛ" value="interskol"
+                class="visually-hidden filter-input-checkbox">
               <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
-              <input type="checkbox" name="brandname" id="MAKITA" value="makita" checked>
+              <input type="checkbox" name="brandname" id="MAKITA" value="makita" checked
+                class="visually-hidden filter-input-checkbox">
               <label for="MAKITA">MAKITA</label>
-              <input type="checkbox" name="brandname" id="DEWALT" value="dewalt">
+              <input type="checkbox" name="brandname" id="DEWALT" value="dewalt"
+                class="visually-hidden filter-input-checkbox">
               <label for="DEWALT">DEWALT</label>
-              <input type="checkbox" name="brandname" id="HITACHI" value="hitachi">
+              <input type="checkbox" name="brandname" id="HITACHI" value="hitachi"
+                class="visually-hidden filter-input-checkbox">
               <label for="HITACHI">HITACHI</label>
             </fieldset>
             <fieldset>
               <legend>Питание:</legend>
-              <input type="radio" name="supply" id="battery" value="battery" checked>
+              <input type="radio" name="supply" id="battery" value="battery" checked
+                class="visually-hidden filter-input-radio">
               <label for="battery">Аккумуляторные</label>
-              <input type="radio" name="supply" id="network" value="network">
+              <input type="radio" name="supply" id="network" value="network" class="visually-hidden filter-input-radio">
               <label for="network">Сетевые</label>
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
@@ -266,11 +272,13 @@
             дрель.</p>
         </div>
       </section>
-      <section class="popup">
+      <section class="popup-added popup">
+        <button type="button" class="btn-close">Закрыть</button>
         <h3>Товар добавлен в корзину!</h3>
-        <a href="">Офоромить заказ</a>
-        <a href="">Продолжить покупки</a>
-        <button type="button">Закрыть</button>
+        <div class="popup-added-buttons">
+          <a href="" class="button">Офоромить заказ</a>
+          <a href="" class="button btn-continue">Продолжить покупки</a>
+        </div>
       </section>
     </div>
   </main>

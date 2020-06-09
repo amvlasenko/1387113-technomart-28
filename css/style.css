@@ -149,7 +149,7 @@ input::-moz-placeholder {
 }
 
 .header-top a {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -194,7 +194,7 @@ input::-moz-placeholder {
   width: 150px;
   padding-top: 9px;
   text-align: center;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -221,7 +221,7 @@ input::-moz-placeholder {
   padding-left: 30px;
   margin-top: 42.5px;
   margin-bottom: 43.5px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -246,7 +246,7 @@ input::-moz-placeholder {
 }
 
 .phone a {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -255,7 +255,7 @@ input::-moz-placeholder {
 }
 
 .header-about address {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -312,7 +312,7 @@ input::-moz-placeholder {
 }
 
 .login, .registration {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -378,7 +378,7 @@ input::-moz-placeholder {
   margin: 0;
   padding-left: 22px;
   padding-top: 20px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -393,7 +393,7 @@ input::-moz-placeholder {
   margin-top: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -405,7 +405,7 @@ input::-moz-placeholder {
 }
 
 .products-items p {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -414,21 +414,21 @@ input::-moz-placeholder {
 }
 
 .product-material {
-  background-image: url("..//img/icon-1.svg");
+  background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 213px 31px;
   background-color: #FFBF47;
 }
 
 .product-tool {
-  background-image: url("..//img/icon-2.svg");
+  background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: 194px 31px;
   background-color: #3BBCE3;
 }
 
 .product-tech {
-  background-image: url("..//img/icon-3.svg");
+  background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: 191px 31px;
   background-color: #DC91D8;
@@ -482,7 +482,7 @@ input::-moz-placeholder {
   margin: 0;
   padding-top: 23px;
   padding-left: 24px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -494,7 +494,7 @@ input::-moz-placeholder {
 .slider p {
   padding-left: 24px;
   padding-top: 5px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -524,7 +524,7 @@ input::-moz-placeholder {
 }
 
 .product-sale {
-  background-image: url("..//img/icon-4.svg");
+  background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
   background-position: 196px 31px;
   grid-column-start: 3;
@@ -533,7 +533,7 @@ input::-moz-placeholder {
 }
 
 .product-delivery {
-  background-image: url("..//img/icon-5.svg");
+  background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
   background-position: 191px 31px;
   grid-column-start: 3;
@@ -566,7 +566,7 @@ input::-moz-placeholder {
 
 .popular-items-header h2 {
   margin: 0;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -580,7 +580,7 @@ input::-moz-placeholder {
   padding-right: 24px;
   padding-top: 11px;
   padding-bottom: 9px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -620,7 +620,7 @@ input::-moz-placeholder {
 
 .popular-manufactures-header h2 {
   margin: 0;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -635,7 +635,7 @@ input::-moz-placeholder {
   padding-right: 24px;
   padding-top: 11px;
   padding-bottom: 9px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -685,7 +685,7 @@ input::-moz-placeholder {
 
 .advantages-header h3 {
   margin: 0;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -736,7 +736,7 @@ input::-moz-placeholder {
   padding: 0;
   padding-top: 13.5px;
   padding-bottom: 17.5px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -797,7 +797,7 @@ input::-moz-placeholder {
 
 .switch-title {
   margin: 0;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -811,7 +811,7 @@ input::-moz-placeholder {
   width: 310px;
   margin: 0;
   margin-top: 30px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -826,6 +826,7 @@ input::-moz-placeholder {
   width: 940px;
   margin: 0 auto;
   justify-content: space-between;
+  padding-top: 62px;
   padding-bottom: 70px;
 }
 
@@ -834,7 +835,8 @@ input::-moz-placeholder {
 }
 
 .main-about h2 {
-  font-family: 'Cuprum', 'Arial';
+  margin: 0;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -844,7 +846,7 @@ input::-moz-placeholder {
 }
 
 .main-about p {
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -853,17 +855,25 @@ input::-moz-placeholder {
 }
 
 .main-about p:nth-child(2) {
-  padding-bottom: 32px;
+  padding-top: 23px;
+  padding-bottom: 26px;
+}
+
+.main-about p:nth-child(3) {
+  width: 385px;
 }
 
 .main-about ul {
-  padding-left: 30px;
-  list-style-image: url("../img/dash.svg");
+  padding-left: 32px;
+  list-style: none;
 }
 
 .main-about li {
-  margin-bottom: 12px;
-  font-family: 'Cuprum', 'Arial';
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-top: 2px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -871,10 +881,36 @@ input::-moz-placeholder {
   color: #000000;
 }
 
+.main-about li::before {
+  position: absolute;
+  top: 14px;
+  left: -32px;
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+
+.main-about li:nth-child(1)::before {
+  top: 16px;
+}
+
+.main-about li:nth-child(3)::before {
+  top: 12px;
+}
+
+.main-about a {
+  display: block;
+  width: 220px;
+  margin-top: 20px;
+}
+
 /* Блок с контактами */
 
 .main-contacts h2 {
-  font-family: 'Cuprum', 'Arial';
+  margin: 0;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -885,13 +921,14 @@ input::-moz-placeholder {
 
 .main-contacts img {
   display: block;
+  margin-top: 33px;
   margin-bottom: 25px;
 }
 
 .main-contacts p {
   max-width: 181px;
-  margin-bottom: 32px;
-  font-family: 'PT Sans', 'Arial';
+  padding-top: 23px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -899,14 +936,20 @@ input::-moz-placeholder {
   color: #000000;
 }
 
+.main-contacts a {
+  display: block;
+  width: 300px;
+  margin-top: 20px;
+}
+
 /* Общие стили красных кнопок главной страницы */
 
 .button {
+  display: inline-block;
+  min-width: 192px;
   padding-top: 11px;
   padding-bottom: 9px;
-  padding-left: 26px;
-  padding-right: 26px;
-  font-family: 'Cuprum';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -928,7 +971,7 @@ input::-moz-placeholder {
   width: 299px;
   padding-top: 12px;
   padding-bottom: 12px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -951,7 +994,7 @@ input::-moz-placeholder {
 }
 
 .my-orders, .user-profile {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -982,6 +1025,7 @@ input::-moz-placeholder {
   padding-left: 52px;
   padding-right: 47px;
   list-style: none;
+  box-shadow: inset 0px -5px 0px #293449;
 }
 
 .header-nav li {
@@ -991,9 +1035,9 @@ input::-moz-placeholder {
 
 .header-nav a {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: 'Cuprum', 'Arial';
+  padding-top: 16px;
+  padding-bottom: 20px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1015,7 +1059,7 @@ input::-moz-placeholder {
 .catalog-head-container {
   width: 940px;
   margin: 0 auto;
-  padding-top: 17px;
+  padding-top: 21px;
 }
 
 .catalog-content {
@@ -1038,7 +1082,7 @@ input::-moz-placeholder {
 .catalog-breadcrumbs li {
   margin-left: 17px;
   padding-right: 17px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1064,7 +1108,7 @@ input::-moz-placeholder {
   display: block;
   margin: 0;
   background-color: #F2F6F8;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1091,7 +1135,7 @@ input::-moz-placeholder {
   padding-bottom: 10px;
   padding-left: 18px;
   background-color: #F7F3EC;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -1105,11 +1149,25 @@ input::-moz-placeholder {
   width: 220px;
   padding: 0;
   margin: 0;
+  margin-top: 15px;
   border: none;
 }
 
+.filter fieldset::after {
+  margin-top: 20px;
+  display: block;
+  content: '';
+  width: 220px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.filter fieldset:last-of-type::after {
+  display: none;
+}
+
 .filter legend {
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -1118,7 +1176,13 @@ input::-moz-placeholder {
 }
 
 .filter label {
-  font-family: 'PT Sans', 'Arial';
+  margin-top: 20px;
+  margin-left: 35px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -1126,12 +1190,61 @@ input::-moz-placeholder {
   text-transform: uppercase;
 }
 
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .filter-button {
+  margin-top: 20px;
   display: block;
   width: 220px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1158,7 +1271,7 @@ input::-moz-placeholder {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 18px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1177,7 +1290,7 @@ input::-moz-placeholder {
   margin-right: 70px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -1232,7 +1345,7 @@ input::-moz-placeholder {
 .item h4 {
   margin: 0;
   margin-top: 28px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1245,7 +1358,7 @@ input::-moz-placeholder {
   width: 141px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -1267,7 +1380,7 @@ input::-moz-placeholder {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 13px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -1295,7 +1408,7 @@ input::-moz-placeholder {
   position: absolute;
   top: 38px;
   background-color: #63A63E;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1314,7 +1427,7 @@ input::-moz-placeholder {
   padding-bottom: 8px;
   position: absolute;
   top: 86px;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1360,7 +1473,7 @@ input::-moz-placeholder {
   text-align: center;
   border: 1px solid #E5E5E5;
   border-radius: 2px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -1404,7 +1517,7 @@ input::-moz-placeholder {
 
 .about-perforators h3 {
   margin: 0;
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1416,12 +1529,117 @@ input::-moz-placeholder {
 .about-perforators p {
   margin-top: 25px;
   width: 907px;
-  font-family: 'PT Sans', 'Arial';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+/* Попапы */
+
+/* Попап с картой на главной */
+
+.popup-adress-container {
+  position: relative;
+  width: 970px;
+  margin: 0 auto;
+  top: 100px;
+}
+
+.popup-adress {
+  position: absolute;
+  top: -596px;
+  left: -8px;
+}
+
+.popup-adress img {
+  width: 970px;
+  height: 477px;
+}
+
+.popup-adress-container::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background-color: var(--basic-red);
+  width: 943px;
+  height: 7px;
+  top: -582px;
+  left: 5px;
+}
+
+.btn-close {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.popup-adress-container .btn-close {
+  position: absolute;
+  top: 31px;
+  right: 24px;
+}
+
+/* Попап с добавлением в корзину в каталоге */
+
+.popup-added {
+  width: 620px;
+  min-height: 282px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -360px;
+  background-color: var(--basic-white);
+  border-top: 7px solid var(--basic-red);
+}
+
+.popup-added h3 {
+  margin: 0;
+  padding-top: 67px;
+  padding-bottom: 66px;
+  font-family: 'Cuprum', 'Arial, sens-serif';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 81px 48px;
+}
+
+.popup-added-buttons {
+  min-height: 112px;
+  padding-top: 37px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.popup-added-buttons .btn-continue {
+  background-color: white;
+  color: black;
+}
+
+.popup-added-buttons .btn-continue:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.popup-added .btn-close {
+  position: absolute;
+  top: 11px;
+  right: 11px;
 }
 
 /* Футер */
@@ -1499,7 +1717,7 @@ input::-moz-placeholder {
 }
 
 .footer-nav a, .footer-menu a {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1526,7 +1744,7 @@ input::-moz-placeholder {
 /* Контакты в футере */
 
 .footer-contacts address, .footer-contacts a {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1545,7 +1763,7 @@ input::-moz-placeholder {
 }
 
 .footer-bottom p {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1596,7 +1814,7 @@ input::-moz-placeholder {
 }
 
 .feedback, .copyright {
-  font-family: 'Cuprum', 'Arial';
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
