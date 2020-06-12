@@ -62,6 +62,7 @@ p {
 /* Хедер общий */
 
 header {
+  padding: 0 0 60px 0;
   display: flex;
   flex-direction: column;
   background-color: var(--basic-background);
@@ -227,12 +228,12 @@ input::-moz-placeholder {
 }
 
 .phone {
-  width: 270px;  
+  width: 270px;
   margin: 2px 0px 0px 15px;
   padding: 4px 0 5px 28px;
   border: 3px solid white;
   background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: 36px 10px;
   text-align: center;
 }
@@ -327,6 +328,7 @@ input::-moz-placeholder {
 /* Блок с карточками и слайдером */
 
 .products {
+  padding: 59px 0 0 0;
   width: 940px;
   margin: 0 auto;
 }
@@ -337,29 +339,37 @@ input::-moz-placeholder {
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 123px 123px 123px;
   list-style: none;
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
 }
 
 .products-items h3 {
   margin: 0;
-
+  font-weight: bold;
+  font-size: 24px;
   line-height: 30px;
-  color: #ffffff;
+  color: var(--basic-white);
 }
 
 .products-items a {
+  margin: 13px 0 0 0;
+  padding: 7px 0 7px 0;
   display: block;
   width: 135px;
-
-  line-height: 18px;
+  font-weight: normal;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--basic-white);
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .products-items p {
   line-height: 24px;
   color: #ffffff;
+}
+
+.products-items li {
+  padding: 21px 0 0 23px;
 }
 
 .product-material {
@@ -372,7 +382,7 @@ input::-moz-placeholder {
 .product-tool {
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
-  background-position: 194px 31px;
+  background-position: 194px 34px;
   background-color: #3bbce3;
 }
 
@@ -464,7 +474,7 @@ input::-moz-placeholder {
 .product-sale {
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
-  background-position: 196px 31px;
+  background-position: 196px 27px;
   grid-column-start: 3;
   grid-row-start: 2;
   background-color: #8ed78f;
@@ -473,7 +483,7 @@ input::-moz-placeholder {
 .product-delivery {
   background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
-  background-position: 191px 31px;
+  background-position: 191px 32px;
   grid-column-start: 3;
   grid-row-start: 3;
   background-color: #ffc047;
@@ -482,37 +492,39 @@ input::-moz-placeholder {
 /* Блок с популярными товарами */
 
 .popular-items {
+  margin: 0 auto;
+  padding: 59px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   width: 940px;
-  margin: 0 auto;
 }
 
 .popular-items-header {
+  margin: 0 auto;
+  padding: 30px 14px 26px 28px;
   display: flex;
   width: 940px;
-  margin: 0 auto;
   justify-content: space-between;
   background-color: #f9f5f0;
 }
 
 .popular-items-header h2 {
   margin: 0;
-
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-size: 30px;
   line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
 }
 
-.popular-items-header a {
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: var(--basic-red);
+.popular-items-header .button {
+  margin: -5px 0 0 0;
 }
 
 .popular-list {
+  padding: 20px 0 0 0;
   display: grid;
   width: 940px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -541,22 +553,12 @@ input::-moz-placeholder {
   color: #32425c;
 }
 
-.popular-manufactures-header a {
-  min-width: 192px;
-
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: var(--basic-red);
-}
-
 .manufactures-list {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   width: 940px;
-  margin: 0 auto;
   list-style: none;
 }
 
@@ -804,10 +806,13 @@ input::-moz-placeholder {
 /* Общие стили красных кнопок главной страницы */
 
 .button {
+  padding: 11px 0 9px 0;
   display: inline-block;
-  min-width: 192px;
-
+  width: 192px;
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -870,7 +875,7 @@ input::-moz-placeholder {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0;
+  padding: 0 16px 0 14px;
   margin: 0;
   list-style: none;
   box-shadow: inset 0px -5px 0px #293449;
@@ -883,7 +888,7 @@ input::-moz-placeholder {
 
 .header-nav a {
   display: block;
-
+  padding: 17px 0 19px 0;
   line-height: 24px;
   color: var(--basic-white);
   height: 100%;
@@ -1112,6 +1117,7 @@ input::-moz-placeholder {
 }
 
 .item {
+  padding: 0 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1129,19 +1135,32 @@ input::-moz-placeholder {
 }
 
 .item h4 {
-  margin: 0;
-
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
   line-height: 20px;
-  color: #000000;
+  text-align: center;
+}
+
+.price {
+  padding: 11px 0 9px 0;
+  display: block;
+  width: 141px;
+  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .item .old-price {
-  display: block;
-  width: 141px;
-
-  line-height: 18px;
+  padding: 11px 0 9px 0;
   text-decoration-line: line-through;
-  text-transform: uppercase;
+  background-color: var(--basic-white);
   color: #a9a9a9;
 }
 
@@ -1152,15 +1171,14 @@ input::-moz-placeholder {
 }
 
 .item .new-price {
-  display: block;
+  padding: 10px 9px 10px 0;
+  margin: 5px 0 0 11px;
   width: 141px;
-
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
   color: #ffffff;
+  text-align: center;
   background-image: url("../img/red-button.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .item img {
@@ -1171,30 +1189,25 @@ input::-moz-placeholder {
   display: none;
 }
 
+.item .button {
+  width: 135px;
+}
+
 .buy {
   display: none;
-  width: 135px;
   position: absolute;
   top: 38px;
   background-color: #63a63e;
-
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
   box-shadow: inset 0px -3px 0px #367315;
   border-radius: 2px;
 }
 
 .to-bookmarks {
+  padding: 8px 0 6px 0;
   display: none;
-  width: 135px;
   position: absolute;
   top: 86px;
-
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
   color: #32425c;
   background-color: var(--basic-white);
   border-radius: 2px;
@@ -1214,8 +1227,13 @@ input::-moz-placeholder {
   background: #518534;
 }
 
+.to-bookmarks:hover {
+  border-color: #32425c;
+}
+
 .to-bookmarks:active {
-  color: var(--basic-greylight);
+  background-color: var(--basic-white);
+  opacity: 0.5;
 }
 
 /* Пагинация */
