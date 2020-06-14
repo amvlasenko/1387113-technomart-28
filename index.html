@@ -15,14 +15,7 @@
     <header>
       <div class="header-top">
         <div class="header-top-wraper">
-          <a class="header-logo">
-            <img
-              src="img/logo-technomart.svg"
-              alt="Техномарт"
-              width="108"
-              height="18"
-            />
-          </a>
+          <a class="button header-logo" aria-label="Логотип Техномарт"></a>
           <form
             action="https://echo.htmlacademy.ru"
             method="GET"
@@ -215,7 +208,7 @@
             />
             <h4>Перфоратор BOSCH BFG 9000</h4>
             <div class="price old-price">32500 Р.</div>
-            <div class="price new-price ">25500 Р.</div>
+            <div class="price new-price">25500 Р.</div>
           </li>
           <li class="item">
             <a href="" class="button buy">Купить</a>
@@ -261,7 +254,7 @@
       <section class="popular-manufactures">
         <div class="popular-manufactures-header">
           <h2>Популярные производители:</h2>
-          <a href="catalog.html" class="button">Открыть каталог</a>
+          <a href="catalog.html" class="button">Все производители</a>
         </div>
         <ul class="manufactures-list">
           <li class="manufactures-item">
@@ -363,27 +356,29 @@
               <li class="switch-item delivery switch-current">
                 <h3 class="switch-title">Доставка</h3>
                 <p>
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж!
+                  Мы с удовольствием доставим ваш товар прямо<br />
+                  к вашему подъезду совершенно бесплатно!<br />
+                  Ведь мы неплохо заработаем,<br />
+                  поднимая его на ваш этаж!
                 </p>
               </li>
               <li class="switch-item guarantee hidden">
                 <h3 class="switch-title">Гарантия</h3>
                 <p>
-                  Если купленный у нас товар поломается или заискрит, а также в
-                  случае пожара, спровоцированного его возгоранием, вы всегда
-                  можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-                  товар на новый. Дом уж восстановите как-нибудь сами.
+                  Если купленный у нас товар поломается или заискрит,<br />
+                  а также в случае пожара, спровоцированного его<br />
+                  возгоранием, вы всегда можете быть уверены в нашей<br />
+                  гарантии. Мы обменяем сгоревший товар на новый.<br />
+                  Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
               <li class="switch-item credit hidden">
                 <h3 class="switch-title">Кредит</h3>
                 <p>
-                  Залезть в долговую яму стало проще! Кредитные консультанты
-                  придут вам на помощь
+                  Залезть в долговую яму стало проще!<br />
+                  Кредитные консультанты придут вам на помощь.
                 </p>
-                <a class="switch-button" href="#">Отправить заявку</a>
+                <a class="button" href="#">Отправить заявку</a>
               </li>
             </ul>
           </div>
@@ -417,10 +412,10 @@
             width="300"
             height="158"
           />
-          <a href="" class="button">Заблудились? Напишите нам!</a>
+          <a href="" class="button btn-write-us">Заблудились? Напишите нам!</a>
         </section>
       </div>
-      <section class="popup">
+      <section class="popup popup-writeus">
         <h2 class="visually-hidden">Связаться с нами</h2>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p>
@@ -453,7 +448,7 @@
           </p>
           <button type="submit">Отправить</button>
         </form>
-        <button type="button">Закрыть</button>
+        <button type="button" class="popup-close">Закрыть</button>
       </section>
       <section class="popup-adress-container popup">
         <div class="popup-adress">
@@ -464,7 +459,7 @@
             width="970"
             height="477"
           />
-          <button type="button" class="btn-close">Закрыть</button>
+          <button type="button" class="popup-close">Закрыть</button>
         </div>
       </section>
     </main>
@@ -472,15 +467,7 @@
       <div class="footer-top">
         <div class="footer-top-wraper">
           <div class="footer-top-line1">
-            <a class="footer-logo">
-              <img
-                class="footer-logo-img"
-                src="img/logo-technomart.svg"
-                alt="Техномарт"
-                width="138"
-                height="23"
-              />
-            </a>
+            <a class="button footer-logo" aria-label="Техномарт"></a>
             <ul class="footer-nav">
               <li>
                 <a href="">Компания</a>
@@ -529,29 +516,32 @@
           </p>
           <ul class="social">
             <li>
-              <a href="" class="social-vk">Вконтакте</a>
+              <a href="" class="social-vk" aria-label="Вконтакте"></a>
             </li>
             <li>
-              <a href="" class="social-fb">Фейсбук</a>
+              <a href="" class="social-fb" aria-label="Фейсбук"></a>
             </li>
             <li>
-              <a href="" class="social-ig">Инстаграм</a>
+              <a href="" class="social-ig" aria-label="Инстаграм"></a>
             </li>
           </ul>
-          <p>
-            Обратная связь:<br />
-            <a class="feedback" href="mailto:mail@htmlacademy.ru"
-              >mail@htmlacademy.ru</a
-            >
-          </p>
-          <p>
-            Разработано —<br />
-            <a class="copyright" href="https://htmlacademy.ru/"
-              >htmlacademy.ru</a
-            >
-          </p>
+          <div class="copyright-wraper">
+            <p>
+              Обратная связь:<br />
+              <a class="feedback" href="mailto:mail@htmlacademy.ru"
+                >mail@htmlacademy.ru</a
+              >
+            </p>
+            <p>
+              Разработано —<br />
+              <a class="copyright" href="https://htmlacademy.ru/"
+                >htmlacademy.ru</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="js/writeus.js"></script>
   </body>
 </html>
