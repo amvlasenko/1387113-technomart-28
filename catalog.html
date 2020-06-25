@@ -140,20 +140,23 @@
           <section class="filter">
             <h3>Фильтр:</h3>
             <form action="https://echo.htmlacademy.ru" method="GET">
-              <fieldset>
+              <fieldset class="filter-range">
                 <legend>Цена:</legend>
-                <input
-                  type="range"
-                  name="price"
-                  id="price"
-                  min="0"
-                  max="30000"
-                  step="500"
-                />
-                <input type="text" name="price-min" value="0" /> —
-                <input type="text" name="price-max" value="30000" />
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max" tabindex="0"></div>
+                    </div>
+                    <div class="price-controls">
+                        <input type="number" name="min-price" value="0">  — 
+                        <input type="number" name="max-price" value="30000">
+                    </div>
+                  </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-manufactures">
                 <legend>Производители:</legend>
                 <input
                   type="checkbox"
@@ -198,7 +201,7 @@
                 />
                 <label for="HITACHI">HITACHI</label>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-suply">
                 <legend>Питание:</legend>
                 <input
                   type="radio"
@@ -356,21 +359,21 @@
                 <div class="price new-price">12500 Р.</div>
               </li>
             </ul>
-            <ul class="pagination">
-              <li>
-                <a class="active">1</a>
-              </li>
-              <li>
-                <a href="">2</a>
-              </li>
-              <li>
-                <a href="">3</a>
-              </li>
-              <li>
-                <a href="" class="pagination-next">Следующая</a>
-              </li>
-            </ul>
           </section>
+          <ul class="pagination">
+            <li>
+              <a class="active">1</a>
+            </li>
+            <li>
+              <a href="">2</a>
+            </li>
+            <li>
+              <a href="">3</a>
+            </li>
+            <li>
+              <a href="" class="pagination-next">Следующая</a>
+            </li>
+          </ul>
         </div>
         <section class="about-perforators">
           <div class="about-perforators-container">
