@@ -271,6 +271,7 @@ input::-moz-placeholder {
   list-style: none;
   width: 299px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logged-in li:nth-child(1) {
@@ -279,6 +280,7 @@ input::-moz-placeholder {
 
 .logged-in li:nth-child(2),
 .logged-in li:nth-child(3) {
+  margin: 7px 16px -1px 16px;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -453,16 +455,23 @@ input::-moz-placeholder {
   display: block;
 }
 
-.slider .slide-title {
-  margin: 0;
+.products-items .slider-item {
+  padding: 2px 0 0 2px;
+}
 
+.slider .slide-title {
+  margin: 0 0 6px 0;
+  font-weight: bold;
+  font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .slider p {
+  font-size: 18px;
   line-height: 24px;
+  font-weight: normal;
   color: #ffffff;
 }
 
@@ -473,14 +482,54 @@ input::-moz-placeholder {
   z-index: 20;
 }
 
+.slider-controls .back,
+.slider-controls .forward {
+  position: absolute;
+  display: block;
+  border: none;
+  width: 30px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-controls .back {
+  bottom: 66px;
+  right: 244px;
+  background-image: url("../img/icon-left.svg");
+}
+
+.slider-controls .forward {
+  bottom: 66px;
+  left: 278px;
+  background-image: url("../img/icon-right.svg");
+}
+
 .slider-controls button {
+  margin: 0 0 0 0;
   padding: 0;
+  display: inline-block;
   width: 10px;
   height: 10px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls .first-slide,
+.slider-controls .second-slide {
+  position: absolute;
+}
+
+.slider-controls .first-slide {
+  bottom: 0;
+  left: 0;
+}
+
+.slider-controls .second-slide {
+  bottom: 0;
+  left: 20px;
 }
 
 .slider-controls .current {
@@ -866,13 +915,27 @@ input::-moz-placeholder {
 /* Каталог хедер */
 
 .user {
-  display: inline-block;
+  position: relative;
+  margin: 2px 0 0 0;
+  padding: 12px 0 12px 0;
+  display: block;
   width: 299px;
-
-  line-height: 21px;
   color: black;
-  background-color: var(--basic-white);
-  text-align: center;
+  background-color: white;
+}
+
+.user svg {
+  position: absolute;
+}
+
+.user svg:nth-child(1) {
+  top: 13px;
+  left: 15px;
+}
+
+.user svg:nth-child(2) {
+  top: 14px;
+  right: 17px;
 }
 
 .user:hover .user-icon,
@@ -891,6 +954,7 @@ input::-moz-placeholder {
 
 .my-orders,
 .user-profile {
+  display: block;
   line-height: 18px;
   color: #32425c;
 }
@@ -1281,8 +1345,42 @@ input::-moz-placeholder {
   border: none;
 }
 
+.sorting-list .to-top,
+.sorting-list .to-bottom {
+  display: block;
+  width: 11px;
+  height: 10px;
+  border: solid #c5c5c5;
+  cursor: pointer;
+}
+
+.sorting-list .current {
+  border-color: var(--basic-red);
+}
+
+.sorting-list .to-top {
+  margin: 4px 22px 0 -22px;
+  border-top-width: 0;
+  border-bottom-width: 10px;
+  border-left-width: 5.5px;
+  border-left-color: transparent;
+  border-right-width: 5.5px;
+  border-right-color: transparent;
+}
+
+.sorting-list .to-bottom {
+  margin: 4px 0 0 -1px;
+  border-top-width: 10px;
+  border-bottom-width: 0;
+  border-left-width: 5.5px;
+  border-left-color: transparent;
+  border-right-width: 5.5px;
+  border-right-color: transparent;
+}
+
 .item-list {
   display: grid;
+  position: relative;
   width: 700px;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 18px;
@@ -1302,6 +1400,19 @@ input::-moz-placeholder {
   margin: 0;
   text-align: center;
   border: 1px solid #eaeaea;
+}
+
+.item + .new::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/item-new.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .item:hover {
@@ -1361,8 +1472,17 @@ input::-moz-placeholder {
   background-position: center;
 }
 
-.item img {
-  justify-self: flex-start;
+.item .bosch-2000,
+.item .bosch-3000 {
+  margin: 0 13px 39px 0;
+}
+
+.item .bosch-6000 {
+  margin: 0 10px 30px 0;
+}
+
+.item .bosch-9000 {
+  margin: 0 0 10px 0;
 }
 
 .item:hover img {
@@ -1373,11 +1493,16 @@ input::-moz-placeholder {
   width: 135px;
 }
 
-.buy {
+.buy {  
+  padding: 10px 0 10px 14px;
   display: none;
   position: absolute;
-  top: 38px;
+  top: 37px;
+  left: 40px;
   background-color: #63a63e;
+  background-image: url("../img/icon-cart-grey.svg");
+  background-position: 30px 10px;
+  background-repeat: no-repeat;
   color: #ffffff;
   box-shadow: inset 0px -3px 0px #367315;
   border-radius: 2px;
@@ -1387,7 +1512,8 @@ input::-moz-placeholder {
   padding: 8px 0 6px 0;
   display: none;
   position: absolute;
-  top: 86px;
+  top: 85px;
+  left: 40px;
   color: #32425c;
   background-color: var(--basic-white);
   border-radius: 2px;
@@ -1404,7 +1530,7 @@ input::-moz-placeholder {
 }
 
 .buy:active {
-  background: #518534;
+  background-color: #518534;
 }
 
 .to-bookmarks:hover {
