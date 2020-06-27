@@ -130,11 +130,11 @@ header {
   background-image: url("../img/icon-search-red.svg");
 }
 
-input::-webkit-input-placeholder {
+.search-form input::-webkit-input-placeholder {
   color: var(--basic-white);
 }
 
-input::-moz-placeholder {
+.search-form input::-moz-placeholder {
   color: var(--basic-white);
 }
 
@@ -881,6 +881,7 @@ input::-moz-placeholder {
 .main-contacts img {
   margin: 0 0 25px 0;
   display: block;
+  cursor: pointer;
 }
 
 .main-contacts p {
@@ -1405,7 +1406,7 @@ input::-moz-placeholder {
 .item + .new::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   width: 70px;
@@ -1493,7 +1494,7 @@ input::-moz-placeholder {
   width: 135px;
 }
 
-.buy {  
+.buy {
   padding: 10px 0 10px 14px;
   display: none;
   position: absolute;
@@ -1631,8 +1632,67 @@ input::-moz-placeholder {
   bottom: auto;
   width: 620px;
   height: 430px;
-  padding: 50px 80px;
   background-color: var(--basic-white);
+  border-top: 7px solid var(--basic-red);
+}
+
+.popup-writeus .form-wraper {
+  padding: 40px 0 0 80px;
+}
+
+.popup-writeus p {
+  margin: 0 16px 0 0;
+  display: inline-block;
+  width: 220px;
+}
+
+.popup-writeus label {
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popup-writeus input,
+.popup-writeus textarea {
+  margin: 10px 0 14px 0;
+  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: black;
+  border: 2px solid var(--basic-greylight);
+  border-radius: 2px;
+}
+
+.popup-writeus input {
+  padding: 5px 0 5px 10px;
+  width: 220px;
+}
+
+.popup-writeus textarea {
+  padding: 5px 9px 9px 10px;
+  width: 460px;
+  height: 114px;
+}
+
+.popup-writeus .submit-wraper {
+  margin: 16px 0 0 0;
+  padding: 37px 0 37px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.popup-writeus .button {
+  width: 460px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-writeus .popup-close {
+  top: 14px;
+  right: 11px;
 }
 
 /* Попап с добавлением в корзину в каталоге */
@@ -1643,10 +1703,46 @@ input::-moz-placeholder {
   bottom: auto;
   width: 620px;
   height: 282px;
-  padding: 50px 80px;
   background-color: var(--basic-white);
   border-top: 7px solid var(--basic-red);
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 81px 48px;
 }
+
+.popup-added h3 {
+  margin: 67px 0 0 0;
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.popup-added .popup-close {
+  top: 11px;
+  right: 11px;
+}
+
+.popup-added .popup-added-buttons {
+  margin: 66px 0 0 0;
+  padding: 37px 0 37px 115px;
+  background-color: #f1f1f1;
+}
+
+.popup-added .button:nth-child(1) {
+  margin: 0 6px 0 0;
+}
+
+.popup-added .btn-continue {
+  background-color: var(--basic-white);
+  color: #000000;
+}
+
+/* Попап с картой */
+
+
 
 /* Футер */
 
@@ -1848,6 +1944,21 @@ input::-moz-placeholder {
 }
 
 /* Попапы и скрытые стили */
+
+.popup-close {
+  display: block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .popup {
   display: none;
