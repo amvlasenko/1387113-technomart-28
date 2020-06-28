@@ -105,7 +105,7 @@
       <section class="products">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="products-items">
-          <li class="product-material">
+          <li class="product-material new">
             <h3>Материалы</h3>
             <a href="">На любой вкус</a>
           </li>
@@ -131,12 +131,12 @@
                 <li class="slider-item slide-current">
                   <h3 class="slide-title">Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
-                  <a class="slide-button" href="#">Открыть католог</a>
+                  <a class="button slide-button" href="/catalog.html">Открыть каталог</a>
                 </li>
                 <li class="slider-item slide">
                   <h3 class="slide-title">Дрели</h3>
                   <p>Соседям на радость!</p>
-                  <a class="slide-button" href="#">Открыть католог</a>
+                  <a class="button slide-button" href="/catalog.html">Открыть каталог</a>
                 </li>
               </ul>
               <div class="slider-controls">
@@ -388,7 +388,7 @@
             src="img/map.png"
             alt="Большая Конюшенная ул., 19  "
             width="300"
-            height="158"            
+            height="158"
             class="map-popup"
           />
           <a href="" class="button btn-write-us">Заблудились? Напишите нам!</a>
@@ -433,17 +433,23 @@
         </form>
         <button type="button" class="popup-close" aria-label="Закрыть"></button>
       </section>
-      <section class="popup-adress-container popup">
-        <div class="popup-adress">
+      <section class="popup-address-container popup">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <img
-            src="img/map-popup.png"
-            alt="Наш адресс на большой карте"
-            width="970"
-            height="477"
-          />
-          <button type="button" class="popup-close">Закрыть</button>
-        </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593350574556!5m2!1sru!2sru"
+            width="943"
+            height="449"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+          <button
+            type="button"
+            class="popup-close"
+            aria-label="Закрыть"
+          ></button>
       </section>
       <section class="popup popup-added">
         <button type="button" class="popup-close" aria-label="Закрыть"></button>

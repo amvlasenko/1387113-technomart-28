@@ -378,7 +378,15 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.products-items a:not(.button):hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.products-items a:not(.button):active {
+  background-color: rgba(169, 169, 169, 0.3);
 }
 
 .products-items p {
@@ -388,6 +396,7 @@ header {
 
 .products-items li {
   padding: 21px 0 0 23px;
+  position: relative;
 }
 
 .product-material {
@@ -421,10 +430,11 @@ header {
 }
 
 .product-slider .slide-button {
+  padding: 11px 0 9px 1px;
   display: block;
   position: absolute;
-  left: 24px;
-  bottom: 27px;
+  left: 1px;
+  top: 167px;
   width: 192px;
   background-color: var(--basic-red);
 }
@@ -1403,6 +1413,7 @@ header {
   border: 1px solid #eaeaea;
 }
 
+.products-items .new::before,
 .item + .new::before {
   position: absolute;
   display: block;
@@ -1742,7 +1753,16 @@ header {
 
 /* Попап с картой */
 
+.popup-address-container {
+  width: 943px;
+  height: 449px;
+  border-top: 7px solid var(--basic-red);
+}
 
+.popup-address-container .popup-close {
+  top: 10px;
+  right: 10px;
+}
 
 /* Футер */
 

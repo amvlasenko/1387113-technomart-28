@@ -1,5 +1,5 @@
 var map = document.querySelector(".map-popup");
-var showPopup = document.querySelector(".popup-adress-container");
+var showPopup = document.querySelector(".popup-address-container");
 var popupClose = showPopup.querySelector(".popup-close");
 
 map.addEventListener("click", function (evt) {
