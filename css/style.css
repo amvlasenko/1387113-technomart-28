@@ -26,7 +26,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+  font-family: PT Sans, Cuprum, Arial, sans-serif;
   line-height: 24px;
 }
 
@@ -107,7 +107,7 @@ header {
 }
 
 .search-form input {
-  margin: 0 0 0 -6px;
+  margin: 0 0 0 -7px;
   padding: 12px 0px 10px 42px;
   width: 271px;
   border: none;
@@ -420,7 +420,8 @@ header {
   background-color: #dc91d8;
 }
 
-.product-slider {
+.products-items .product-slider {
+  padding: 0 0 0 0;
   position: relative;
   width: 620px;
   grid-column-start: 1;
@@ -429,12 +430,18 @@ header {
   background-color: #645a58;
 }
 
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .product-slider .slide-button {
   padding: 11px 0 9px 1px;
   display: block;
   position: absolute;
-  left: 1px;
-  top: 167px;
+  left: 24px;
+  top: 188px;
   width: 192px;
   background-color: var(--basic-red);
 }
@@ -443,26 +450,38 @@ header {
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.slide-perforator {
+.slider-list .slide:nth-child(1) {
   background-image: url("../img/perforator-slider.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.slide-drill {
+.slider-list .slide:nth-child(2) {
   background-image: url("../img/drill-slider.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slide {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
-.slide-current {
-  display: block;
+.slider-list > .slide:first-child {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .products-items .slider-item {
@@ -495,7 +514,6 @@ header {
 .slider-controls .back,
 .slider-controls .forward {
   position: absolute;
-  display: block;
   border: none;
   width: 30px;
   height: 45px;
@@ -504,6 +522,7 @@ header {
 }
 
 .slider-controls .back {
+  display: none;
   bottom: 66px;
   right: 244px;
   background-image: url("../img/icon-left.svg");
@@ -527,22 +546,26 @@ header {
   cursor: pointer;
 }
 
-.slider-controls .first-slide,
-.slider-controls .second-slide {
+.slider-pagination {
+  position: absolute;
+  display: block;
+}
+
+.slider-pagination button {
   position: absolute;
 }
 
-.slider-controls .first-slide {
+.slider-pagination button:nth-child(1) {
   bottom: 0;
   left: 0;
 }
 
-.slider-controls .second-slide {
+.slider-pagination button:nth-child(2) {
   bottom: 0;
   left: 20px;
 }
 
-.slider-controls .current {
+.slider-pagination .current {
   background-color: #ee3643;
 }
 
@@ -707,7 +730,7 @@ header {
 
 .advantages-container {
   margin: 0 auto;
-  padding: 65px 0 98px 0;
+  padding: 65px 0 37px 0;
   width: 940px;
 }
 
@@ -722,11 +745,14 @@ header {
 }
 
 .switch {
+  padding: 30px 0 0 0;
   display: flex;
+  overflow: hidden;
+  height: 280px;
 }
 
 .switch-controls {
-  padding: 33px 0 0 0;
+  padding: 3px 0 0 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -736,7 +762,7 @@ header {
 .switch-controls::after {
   position: absolute;
   right: 0;
-  top: -16px;
+  top: -38px;
   display: block;
   content: "";
   width: 10px;
@@ -779,17 +805,23 @@ header {
 
 .switch-list {
   margin: 0 0 0 80px;
+  position: relative;
   flex-grow: 2;
   list-style: none;
 }
 
 .switch-list li {
   display: block;
-  min-height: 185px;
+  min-height: 100%;
 }
 
-.switch-list .hidden {
-  display: none;
+.switch-list .switch-title {
+  display: block;
+  margin: 0 0 30px 0;
+}
+
+.switch-list .btn-credit {
+  margin: 27px 0 0 0;
 }
 
 .switch-list .delivery {
@@ -990,6 +1022,7 @@ header {
 .header-nav ul {
   padding: 0 20px 0 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
   list-style: none;
@@ -997,7 +1030,6 @@ header {
 }
 
 .header-nav li {
-  width: 100%;
   text-align: center;
 }
 
@@ -1666,6 +1698,7 @@ header {
 }
 
 .popup-writeus label {
+  display: block;
   font-family: Cuprum, Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -1698,7 +1731,7 @@ header {
 
 .popup-writeus .submit-wraper {
   margin: 16px 0 0 0;
-  padding: 37px 0 37px 0;
+  padding: 38px 0 37px 0;
   text-align: center;
   background-color: #f4f4f4;
 }
@@ -1807,23 +1840,26 @@ header {
 .footer-top-line2 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 /* Навигация и меню футера */
 
 .footer-nav {
-  margin: 29px 0 0 0;
+  margin: 0 0 0 0;
+  padding: 31px 0 0 3px;
+  width: 610px;
 }
 
 .footer-menu {
+  padding: 0 0 0 3px;
   margin: 8px 0 0 0;
+  width: 585px;
 }
 
 .footer-nav,
 .footer-menu {
-  padding: 0 0 0 0;
   display: flex;
+  flex-wrap: wrap;
   font-family: Cuprum, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;

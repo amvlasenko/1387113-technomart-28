@@ -125,18 +125,30 @@
             <h3>Доставка</h3>
             <a href="">Бесплатно</a>
           </li>
-          <li class="product-slider slide-perforator">
-            <div class="slider">
+          <li class="product-slider">
+            <div class="slider" id="main-slider">
               <ul class="slider-list">
-                <li class="slider-item slide-current">
-                  <h3 class="slide-title">Перфораторы</h3>
-                  <p>Настоящие мужские игрушки</p>
-                  <a class="button slide-button" href="catalog.html">Открыть каталог</a>
-                </li>
-                <li class="slider-item slide">
+                <li
+                  class="slide"
+                  id="slide-2"
+                  data-image="../img/drill-slider.jpg"
+                >
                   <h3 class="slide-title">Дрели</h3>
                   <p>Соседям на радость!</p>
-                  <a class="button slide-button" href="catalog.html">Открыть каталог</a>
+                  <a class="button slide-button" href="catalog.html"
+                    >Открыть каталог</a
+                  >
+                </li>
+                <li
+                  class="slide"
+                  id="slide-1"
+                  data-image="../img/perforator-slider.jpg"
+                >
+                  <h3 class="slide-title">Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="button slide-button" href="catalog.html"
+                    >Открыть каталог</a
+                  >
                 </li>
               </ul>
               <div class="slider-controls">
@@ -150,16 +162,18 @@
                   type="button"
                   aria-label="Следующий слайд"
                 ></button>
-                <button
-                  class="first-slide"
-                  type="button"
-                  aria-label="Первый слайд"
-                ></button>
-                <button
-                  class="second-slide current"
-                  type="button"
-                  aria-label="Второй слайд"
-                ></button>
+                <div class="slider-pagination">
+                  <button
+                    class="first-slide current"
+                    type="button"
+                    aria-label="Первый слайд"
+                  ></button>
+                  <button
+                    class="second-slide"
+                    type="button"
+                    aria-label="Второй слайд"
+                  ></button>
+                </div>
               </div>
             </div>
           </li>
@@ -324,14 +338,14 @@
           </div>
           <div class="switch">
             <div class="switch-controls">
-              <button class="current" type="button" aria-label="Доставка">
+              <button  type="button" aria-label="Доставка" data-switch="0" class="current">
                 Доставка
               </button>
-              <button type="button" aria-label="Гарантия">Гарантия</button>
-              <button type="button" aria-label="Кредит">Кредит</button>
+              <button type="button" aria-label="Гарантия" data-switch="1">Гарантия</button>
+              <button type="button" aria-label="Кредит" data-switch="2">Кредит</button>
             </div>
             <ul class="switch-list">
-              <li class="switch-item delivery switch-current">
+              <li class="switch-item delivery">
                 <h3 class="switch-title">Доставка</h3>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо<br />
@@ -340,7 +354,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="switch-item guarantee hidden">
+              <li class="switch-item guarantee ">
                 <h3 class="switch-title">Гарантия</h3>
                 <p>
                   Если купленный у нас товар поломается или заискрит,<br />
@@ -350,13 +364,13 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="switch-item credit hidden">
+              <li class="switch-item credit ">
                 <h3 class="switch-title">Кредит</h3>
                 <p>
                   Залезть в долговую яму стало проще!<br />
                   Кредитные консультанты придут вам на помощь.
                 </p>
-                <a class="button" href="#">Отправить заявку</a>
+                <a class="button btn-credit" href="#">Отправить заявку</a>
               </li>
             </ul>
           </div>
@@ -399,7 +413,7 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="form-wraper">
             <p>
-              <label for="name">Ваше имя:</label><br />
+              <label for="name">Ваше имя:</label>
               <input
                 type="text"
                 id="name"
@@ -408,7 +422,7 @@
               />
             </p>
             <p>
-              <label for="email">Ваш e-mail:</label><br />
+              <label for="email">Ваш e-mail:</label>
               <input
                 type="email"
                 id="email"
@@ -417,7 +431,7 @@
               />
             </p>
             <p>
-              <label for="text">Текст письма:</label><br />
+              <label for="text">Текст письма:</label>
               <textarea
                 name="text"
                 id="text"
@@ -434,21 +448,17 @@
         <button type="button" class="popup-close" aria-label="Закрыть"></button>
       </section>
       <section class="popup-address-container popup">
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593350574556!5m2!1sru!2sru"
-            width="943"
-            height="449"
-            style="border: 0;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-          <button
-            type="button"
-            class="popup-close"
-            aria-label="Закрыть"
-          ></button>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593350574556!5m2!1sru!2sru"
+          width="943"
+          height="449"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <button type="button" class="popup-close" aria-label="Закрыть"></button>
       </section>
       <section class="popup popup-added">
         <button type="button" class="popup-close" aria-label="Закрыть"></button>
@@ -541,5 +551,7 @@
     <script src="js/writeus.js"></script>
     <script src="js/addcart.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/srvice-switch.js"></script>
   </body>
 </html>
