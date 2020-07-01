@@ -457,13 +457,13 @@ header {
 }
 
 .slider-list .slide:nth-child(1) {
-  background-image: url("../img/perforator-slider.jpg");
+  background-image: url("../img/drill-slider.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slider-list .slide:nth-child(2) {
-  background-image: url("../img/drill-slider.jpg");
+  background-image: url("../img/perforator-slider.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
