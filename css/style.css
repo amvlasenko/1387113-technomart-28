@@ -1261,7 +1261,7 @@ header {
 }
 
 .price-controls input {
-  width: 95px;
+  max-width: 95px;
   font-family: PT Sans, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1272,6 +1272,7 @@ header {
   background-color: #f7f3ec;
   border: none;
   border-radius: 2px;
+  -moz-appearance: textfield;
 }
 
 .price-controls input:nth-child(1) {
