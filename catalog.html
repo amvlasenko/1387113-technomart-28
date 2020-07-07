@@ -25,6 +25,7 @@
             method="GET"
             class="search-form"
           >
+            <label class="visually-hidden" for="search">Поиск</label>
             <input
               type="search"
               name="search"
@@ -52,41 +53,9 @@
           <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
         <ul class="logged-in">
-          <li>
-            <a href="" class="user">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="18"
-                viewBox="0 0 20 18"
-              >
-                <path
-                  class="user-icon"
-                  fill="#c5c5c5"
-                  d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"
-                />
-              </svg>
-              Равшан Джамшутович
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="17"
-                viewBox="0 0 21 17"
-              >
-                <g fill="#c5c5c5">
-                  <path
-                    class="logout-icon"
-                    fill="#c5c5c5"
-                    d="M21 8.5L12.125 0v6h-6v5h6v6z"
-                  />
-                  <path
-                    class="logout-icon"
-                    fill="#c5c5c5"
-                    d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"
-                  />
-                </g>
-              </svg>
-            </a>
+          <li class="profile">
+            <a href="" class="username">Равшан Джамшутович</a>
+            <a href="" class="logout" aria-label="Выйти из профиля"></a>
           </li>
           <li>
             <a href="" class="my-orders">Мои заказы</a>
@@ -127,6 +96,9 @@
         <div class="catalog-head-container">
           <ul class="catalog-breadcrumbs">
             <li>
+              <a class="to-index" href="index.html" aria-label="На главную"></a>
+            </li>
+            <li>
               <a href="catalog.html">Каталог</a>
             </li>
             <li>
@@ -151,12 +123,27 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <button class="toggle toggle-min" type="button"></button>
+                    <button class="toggle toggle-max" type="button"></button>
                   </div>
                   <div class="price-controls">
-                    <input type="number" name="min-price" value="0" /> —
-                    <input type="number" name="max-price" value="30000" />
+                    <label for="min-price">
+                      <input
+                        type="number"
+                        name="min-price"
+                        value="0"
+                        id="min-price"
+                      />
+                    </label>
+                    —
+                    <label for="max-price">
+                      <input
+                        type="number"
+                        name="max-price"
+                        value="30000"
+                        id="max-price"
+                      />
+                    </label>
                   </div>
                 </div>
               </fieldset>
@@ -174,11 +161,11 @@
                 <input
                   type="checkbox"
                   name="brandname"
-                  id="ИНТЕРСКОЛ"
+                  id="interskol"
                   value="interskol"
                   class="visually-hidden filter-input-checkbox"
                 />
-                <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+                <label for="interskol">ИНТЕРСКОЛ</label>
                 <input
                   type="checkbox"
                   name="brandname"
@@ -243,10 +230,18 @@
                   <a href="">По функционалу</a>
                 </li>
                 <li>
-                  <div class="to-top current" tabindex="0"></div>
+                  <button
+                    class="to-top current"
+                    type="button"
+                    aria-label="По возрастанию"
+                  ></button>
                 </li>
                 <li>
-                  <div class="to-bottom" tabindex="0"></div>
+                  <button
+                    class="to-bottom"
+                    type="button"
+                    aria-label="По убыванию"
+                  ></button>
                 </li>
               </ul>
             </section>
@@ -493,7 +488,9 @@
             </p>
             <p>
               Разработано —<br />
-              <a class="copyright" href="https://htmlacademy.ru/"
+              <a
+                class="copyright"
+                href="https://htmlacademy.ru/intensive/htmlcss"
                 >htmlacademy.ru</a
               >
             </p>

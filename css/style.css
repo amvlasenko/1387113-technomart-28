@@ -14,6 +14,9 @@
   --basic-warning: #ffbf47;
   --basic-error: #ba2732;
   --basic-lightgrey: #eaeaea;
+  --basic-button-hover: #ca2c37;
+  --basic-black: #000000;
+  --basic-link: #32425c;
 }
 
 *,
@@ -26,7 +29,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: PT Sans, Cuprum, Arial, sans-serif;
+  font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
   line-height: 24px;
 }
 
@@ -37,12 +40,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-ul,
-p {
-  margin: 0;
-  padding: 0;
 }
 
 /* Grid */
@@ -66,7 +63,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: var(--basic-background);
-  font-family: Cuprum, Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -102,6 +99,14 @@ header {
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
+.header-top .header-logo:hover {
+  background-color: var(--basic-red);
+}
+
+.header-top .header-logo:active {
+  background-color: var(--basic-error);
+}
+
 .search-form {
   display: inline;
 }
@@ -110,10 +115,10 @@ header {
   margin: 0 0 0 -7px;
   padding: 12px 0px 10px 42px;
   width: 271px;
+  max-height: 42px;
   border: none;
   outline: none;
   background-color: #293449;
-  border: none;
   background-image: url("../img/icon-search-grey.svg");
   background-repeat: no-repeat;
   background-position: 17px 12px;
@@ -174,6 +179,10 @@ header {
   background-image: url("../img/icon-cart-white.svg");
 }
 
+.cart:active {
+  background-image: url("../img/icon-cart-grey.svg");
+}
+
 .added {
   background-color: var(--basic-red);
 }
@@ -189,6 +198,10 @@ header {
 
 .bookmarks:hover {
   background-image: url("../img/icon-bookmark-white.svg");
+}
+
+.bookmarks:active {
+  background-image: url("../img/icon-bookmark-grey.svg");
 }
 
 .header-top .order {
@@ -211,6 +224,7 @@ header {
 
 .header-about h1 {
   display: inline-block;
+  vertical-align: baseline;
   width: 227px;
   margin: 0px 0px 0px;
   padding: 0px 0px 0px 30px;
@@ -223,7 +237,8 @@ header {
 }
 
 .contact-info {
-  text-align: center;
+  margin: 0 0 0 28px;
+  text-align: center;  
 }
 
 .phone {
@@ -254,65 +269,50 @@ header {
 
 .logged,
 .logged-in {
+  width: 299px;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   text-align: center;
   font-size: 21px;
   line-height: 21px;
   justify-content: space-between;
 }
 
-.logged-in {
-  margin: 0 0 0 -29px;
-  padding: 0 0 0 0;
-  list-style: none;
-  width: 299px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.logged-in li:nth-child(1) {
-  width: 299px;
-}
-
-.logged-in li:nth-child(2),
-.logged-in li:nth-child(3) {
-  margin: 7px 16px -1px 16px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #32425c;
-}
-
-.logged-in li:last-child {
-  list-style: outside;
-  color: #32425c;
-}
-
-.logged-in li:last-child:hover {
-  list-style: outside;
-  color: var(--basic-red);
-}
-
-.logged-in li:last-child:active {
-  list-style: outside;
-  color: var(--basic-greylight);
+.logged a,
+.logged-in a {
+  color: var(--basic-black);
 }
 
 .login,
 .registration {
-  color: #000000;
   background-color: var(--basic-white);
 }
 
+.logged {
+  padding: 0 0 0 18px;
+}
+
 .login {
-  margin: 2px 10px 0 -10px;
-  padding: 12px 6px 12px 0;
+  margin: 2px 0 0 0;
+  padding: 12px 6px 12px 24px;
   display: block;
   text-align: center;
   width: 121px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 14px;
+}
+
+.login:hover {
+  background-image: url("../img/icon-login-hover.svg");
+}
+
+.login:active {
+  background-image: url("../img/icon-login.svg");
 }
 
 .registration {
@@ -352,12 +352,14 @@ header {
 }
 
 .products-items {
+  margin: 0;
+  padding: 0;
   display: grid;
   gap: 20px;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 123px 123px 123px;
   list-style: none;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 }
 
 .products-items h3 {
@@ -434,6 +436,10 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.slider p {
+  margin: 0;
 }
 
 .product-slider .slide-button {
@@ -538,6 +544,7 @@ header {
   margin: 0 0 0 0;
   padding: 0;
   display: inline-block;
+  vertical-align: baseline;
   width: 10px;
   height: 10px;
   background-color: transparent;
@@ -608,7 +615,7 @@ header {
 
 .popular-items-header h2 {
   margin: 0;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-style: normal;
@@ -622,6 +629,7 @@ header {
 }
 
 .popular-list {
+  margin: 0;
   padding: 20px 0 0 0;
   display: grid;
   width: 940px;
@@ -648,7 +656,7 @@ header {
 .popular-manufactures-header h2 {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -693,6 +701,7 @@ header {
 }
 
 .manufactures-item a {
+  position: relative;
   display: flex;
   width: 220px;
   flex-wrap: wrap;
@@ -702,6 +711,18 @@ header {
   flex-shrink: 0;
 }
 
+.interskol img {
+  position: absolute;
+  top: 21px;
+  left: 8px;
+}
+
+.metabo img {
+  position: absolute;
+  top: 37px;
+  left: 3px;
+}
+
 /* Блок с преимуществами */
 
 .advantages {
@@ -709,7 +730,7 @@ header {
 }
 
 .advantages h3 {
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -720,7 +741,7 @@ header {
 
 .advantages p {
   width: 400px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -776,7 +797,7 @@ header {
   margin: 0 0 0 0;
   padding: 14px 0 18px 22px;
   width: 240px;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -805,6 +826,7 @@ header {
 
 .switch-list {
   margin: 0 0 0 80px;
+  padding: 0;
   position: relative;
   flex-grow: 2;
   list-style: none;
@@ -855,7 +877,7 @@ header {
 .main-about-container h2 {
   margin: 0 0 23px 0;
   padding: 0 0 0 0;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -864,7 +886,7 @@ header {
 }
 
 .main-about-container p {
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -889,7 +911,7 @@ header {
 .main-about li {
   margin: 0 0 12px 0;
   position: relative;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -921,10 +943,16 @@ header {
 
 /* Блок с контактами */
 
-.main-contacts img {
+.main-contacts .map-popup {
   margin: 0 0 25px 0;
   display: block;
+  width: 300px;
+  height: 158px;
   cursor: pointer;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
 
 .main-contacts p {
@@ -941,8 +969,9 @@ header {
 .button {
   padding: 11px 0 9px 0;
   display: inline-block;
+  vertical-align: baseline;
   width: 192px;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -950,6 +979,12 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   background-color: var(--basic-red);
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--basic-button-hover);
 }
 
 .button:active {
@@ -957,69 +992,96 @@ header {
 }
 
 /* Каталог хедер */
+.logged-in {
+  justify-content: center;
+}
 
-.user {
-  position: relative;
+.logged-in li {
+  margin: 4px 0 -1px 0;
+  color: var(--basic-link);
+}
+
+.logged-in .profile {
+  display: flex;
   margin: 2px 0 0 0;
-  padding: 12px 0 12px 0;
-  display: block;
   width: 299px;
-  color: black;
-  background-color: white;
+  background-color: var(--basic-white);
 }
 
-.user svg {
-  position: absolute;
-}
-
-.user svg:nth-child(1) {
-  top: 13px;
-  left: 15px;
-}
-
-.user svg:nth-child(2) {
-  top: 14px;
-  right: 17px;
-}
-
-.user:hover .user-icon,
-.user:hover .logout-icon {
-  fill: var(--basic-grey);
-}
-
-.user:active {
-  color: var(--basic-greylight);
-}
-
-.user:active .user-icon,
-.user:active .logout-icon {
-  fill: var(--basic-greylight);
-}
-
-.my-orders,
-.user-profile {
+.username {
+  padding: 12px 0 9px 45px;
   display: block;
-  line-height: 18px;
-  color: #32425c;
+  flex-basis: 254px;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
 }
 
-.my-orders:hover,
-.user-profile:hover {
+.username:hover {
+  background-image: url("../img/icon-user-hover.svg");
+}
+
+.username:active {
+  color: var(--basic-greylight);
+  background-image: url("../img/icon-user.svg");
+}
+
+.logout {
+  display: block;
+  flex-basis: 45px;
+  height: 45px;
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 7px 14px;
+}
+
+.logout:hover {
+  background-image: url("../img/icon-logout-hover.svg");
+}
+
+.logout:active {
+  background-image: url("../img/icon-logout.svg");
+}
+
+.logged-in .my-orders,
+.logged-in .user-profile {
+  color: var(--basic-link);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.logged-in .my-orders:hover,
+.logged-in .user-profile:hover {
   color: var(--basic-red);
 }
 
-.my-orders:active,
-.user-profile:active {
+.logged-in .my-orders:active,
+.logged-in .user-profile:active {
+  color: var(--basic-greylight);
+}
+
+.logged-in li:last-child {
+  margin: 4px 0 -1px 32px;
+  list-style: disc;
+} 
+
+.logged-in li:last-child:hover {
+  color: var(--basic-red);
+}
+
+.logged-in li:last-child:active {
   color: var(--basic-greylight);
 }
 
 .header-nav {
-  margin: 0 auto;
+  margin: 0 auto
+  ;
   width: 940px;
   background-color: #32425c;
 }
 
 .header-nav ul {
+  margin: 0;
   padding: 0 20px 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -1061,10 +1123,11 @@ header {
 }
 
 .catalog-breadcrumbs {
-  padding: 24px 0 20px 56px;
+  margin: 0;
+  padding: 21px 0 20px 0;
   position: relative;
   display: flex;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1074,10 +1137,10 @@ header {
   list-style: none;
 }
 
-.catalog-breadcrumbs::before {
+.catalog-breadcrumbs .to-index {
   position: absolute;
-  top: 24px;
-  left: 0;
+  top: 3px;
+  left: -1px;
   display: block;
   content: "";
   width: 14px;
@@ -1086,8 +1149,12 @@ header {
   background-repeat: no-repeat;
 }
 
+.catalog-breadcrumbs li:first-child {
+  margin: 0 56px 0 0;
+}
+
 .catalog-breadcrumbs li {
-  margin: -3px 40px 0 0;
+  margin: 0 40px 0 0;
   position: relative;
 }
 
@@ -1104,6 +1171,10 @@ header {
   background-position: left center;
 }
 
+.catalog-breadcrumbs li:first-child::before {
+  display: none;
+}
+
 .catalog-breadcrumbs a {
   color: black;
 }
@@ -1116,7 +1187,7 @@ header {
 
 .catalog-heading h2 {
   margin: 0 0 0 0;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1135,7 +1206,7 @@ header {
 
 .filter {
   max-width: 220px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
@@ -1178,7 +1249,7 @@ header {
 }
 
 .filter legend {
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -1228,6 +1299,7 @@ header {
 }
 
 .range-controls .toggle {
+  padding: 0;
   position: absolute;
   top: 29px;
   left: 0;
@@ -1260,9 +1332,15 @@ header {
   background: #00ca74;
 }
 
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .price-controls input {
   width: 95px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -1274,14 +1352,27 @@ header {
   border-radius: 2px;
 }
 
+.price-controls label {
+  margin: 0;
+  width: 95px;
+}
+
+.price-controls  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.price-controls input[type=number] {
+    -moz-appearance:textfield;
+}
+
 .price-controls input:nth-child(1) {
   margin: 0 4px 0 0;
-  padding: 9px 0 11px 14px;
+  padding: 9px 14px 11px 14px;
 }
 
 .price-controls input:nth-child(2) {
   margin: 0 0 0 4px;
-  padding: 9px 0 11px 14px;
+  padding: 9px 14px 11px 18px;
 }
 
 .filter .filter-manufactures {
@@ -1342,7 +1433,7 @@ header {
   padding: 9px 0 9px 0;
   display: block;
   width: 220px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1360,7 +1451,7 @@ header {
 .sorting {
   padding: 10px 0 10px 20px;
   display: flex;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -1376,6 +1467,8 @@ header {
 }
 
 .sorting-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
 }
@@ -1398,6 +1491,7 @@ header {
 
 .sorting-list .to-top,
 .sorting-list .to-bottom {
+  padding: 0;
   display: block;
   width: 11px;
   height: 10px;
@@ -1430,6 +1524,8 @@ header {
 }
 
 .item-list {
+  margin: 0;
+  padding: 0;
   display: grid;
   position: relative;
   width: 700px;
@@ -1476,7 +1572,7 @@ header {
   padding: 0 0 0 0;
   display: block;
   width: 184px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1488,7 +1584,7 @@ header {
   padding: 11px 0 9px 0;
   display: block;
   width: 141px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1577,19 +1673,20 @@ header {
   display: block;
 }
 
-.buy:hover {
+.item .buy:hover {
   background-color: var(--basic-success);
 }
 
-.buy:active {
+.item .buy:active {
   background-color: #518534;
 }
 
-.to-bookmarks:hover {
+.item .to-bookmarks:hover {
   border-color: #32425c;
+  background-color: var(--basic-white);
 }
 
-.to-bookmarks:active {
+.item .to-bookmarks:active {
   background-color: var(--basic-white);
   opacity: 0.5;
 }
@@ -1597,6 +1694,7 @@ header {
 /* Пагинация */
 
 .pagination {
+  margin: 0;
   padding: 48px 0 0 0;
   grid-column-start: 2;
   display: flex;
@@ -1612,7 +1710,7 @@ header {
   text-align: center;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1642,7 +1740,7 @@ header {
 /* О перфораторах */
 
 .about-perforators {
-  padding: 65px 0 68px 0;
+  padding: 65px 0 55px 0;
   background-color: var(--basic-background);
 }
 
@@ -1654,7 +1752,7 @@ header {
 .about-perforators h3 {
   margin: 0 0 25px 0;
   padding: 0 0 0 0;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1665,7 +1763,7 @@ header {
 
 .about-perforators p {
   width: 907px;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1694,12 +1792,13 @@ header {
 .popup-writeus p {
   margin: 0 16px 0 0;
   display: inline-block;
+  vertical-align: baseline;
   width: 220px;
 }
 
 .popup-writeus label {
   display: block;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -1708,7 +1807,7 @@ header {
 .popup-writeus input,
 .popup-writeus textarea {
   margin: 10px 0 14px 0;
-  font-family: PT Sans, Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1764,7 +1863,7 @@ header {
 
 .popup-added h3 {
   margin: 67px 0 0 0;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1822,11 +1921,12 @@ header {
 
 .footer-bottom p {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .footer-logo {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0;
+  padding: 0;
   display: block;
   width: 220px;
   height: 68px;
@@ -1834,6 +1934,14 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 5px solid var(--basic-error);
+}
+
+.footer-logo:hover {
+  background-color: var(--basic-red);
+}
+
+.footer-logo:active {
+  background-color: var(--basic-red);
 }
 
 .footer-top-line1,
@@ -1845,7 +1953,7 @@ header {
 /* Навигация и меню футера */
 
 .footer-nav {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 31px 0 0 3px;
   width: 610px;
 }
@@ -1860,7 +1968,7 @@ header {
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1902,7 +2010,7 @@ header {
 
 .footer-contacts address,
 .footer-contacts a {
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1915,7 +2023,7 @@ header {
 .footer-bottom {
   padding: 32px 0 29px 0;
   display: block;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1944,6 +2052,7 @@ header {
 
 .social {
   margin: 2px 0 0 43px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   width: 134px;

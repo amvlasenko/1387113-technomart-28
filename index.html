@@ -21,6 +21,7 @@
             method="GET"
             class="search-form"
           >
+            <label class="visually-hidden" for="search">Поиск</label>
             <input
               type="search"
               name="search"
@@ -49,26 +50,7 @@
         </div>
         <ul class="logged">
           <li>
-            <a href="" class="login">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="17"
-                viewBox="0 0 20 17"
-              >
-                <path
-                  class="login-icon"
-                  fill="#c5c5c5"
-                  d="M14.875 8.5L6 0v6H0v5h6v6z"
-                />
-                <path
-                  class="login-icon"
-                  fill="#c5c5c5"
-                  d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"
-                />
-              </svg>
-              Войти
-            </a>
+            <a href="" class="login">Войти</a>
           </li>
           <li>
             <a href="" class="registration">Регистрация</a>
@@ -279,7 +261,7 @@
               />
             </a>
           </li>
-          <li class="manufactures-item">
+          <li class="manufactures-item interskol">
             <a href="">
               <img
                 src="img/interskol.jpg"
@@ -314,7 +296,7 @@
               />
             </a>
           </li>
-          <li class="manufactures-item">
+          <li class="manufactures-item metabo">
             <a href="">
               <img
                 src="img/metabo.jpg"
@@ -338,11 +320,20 @@
           </div>
           <div class="switch">
             <div class="switch-controls">
-              <button  type="button" aria-label="Доставка" data-switch="0" class="current">
+              <button
+                type="button"
+                aria-label="Доставка"
+                data-switch="0"
+                class="current"
+              >
                 Доставка
               </button>
-              <button type="button" aria-label="Гарантия" data-switch="1">Гарантия</button>
-              <button type="button" aria-label="Кредит" data-switch="2">Кредит</button>
+              <button type="button" aria-label="Гарантия" data-switch="1">
+                Гарантия
+              </button>
+              <button type="button" aria-label="Кредит" data-switch="2">
+                Кредит
+              </button>
             </div>
             <ul class="switch-list">
               <li class="switch-item delivery">
@@ -354,7 +345,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="switch-item guarantee ">
+              <li class="switch-item guarantee">
                 <h3 class="switch-title">Гарантия</h3>
                 <p>
                   Если купленный у нас товар поломается или заискрит,<br />
@@ -364,7 +355,7 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="switch-item credit ">
+              <li class="switch-item credit">
                 <h3 class="switch-title">Кредит</h3>
                 <p>
                   Залезть в долговую яму стало проще!<br />
@@ -398,14 +389,14 @@
         <section class="main-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img
-            src="img/map.png"
-            alt="Большая Конюшенная ул., 19  "
-            width="300"
-            height="158"
+          <button
             class="map-popup"
-          />
-          <a href="" class="button btn-write-us">Заблудились? Напишите нам!</a>
+            type="button"
+            aria-label="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+          ></button>
+          <button class="button btn-write-us" type="button">
+            Заблудились? Напишите нам!
+          </button>
         </section>
       </div>
       <section class="popup popup-writeus">
@@ -540,7 +531,9 @@
             </p>
             <p>
               Разработано —<br />
-              <a class="copyright" href="https://htmlacademy.ru/"
+              <a
+                class="copyright"
+                href="https://htmlacademy.ru/intensive/htmlcss"
                 >htmlacademy.ru</a
               >
             </p>
