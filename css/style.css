@@ -238,7 +238,7 @@ header {
 
 .contact-info {
   margin: 0 0 0 28px;
-  text-align: center;  
+  text-align: center;
 }
 
 .phone {
@@ -1063,7 +1063,7 @@ header {
 .logged-in li:last-child {
   margin: 4px 0 -1px 32px;
   list-style: disc;
-} 
+}
 
 .logged-in li:last-child:hover {
   color: var(--basic-red);
@@ -1074,8 +1074,7 @@ header {
 }
 
 .header-nav {
-  margin: 0 auto
-  ;
+  margin: 0 auto;
   width: 940px;
   background-color: #32425c;
 }
@@ -1357,12 +1356,12 @@ header {
   width: 95px;
 }
 
-.price-controls  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+.price-controls input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
-.price-controls input[type=number] {
-    -moz-appearance:textfield;
+.price-controls input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .price-controls input:nth-child(1) {
