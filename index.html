@@ -389,23 +389,28 @@
         <section class="main-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <button
+          <a
             class="map-popup"
-            type="button"
+            href="map.html"
             aria-label="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
-          ></button>
-          <button class="button btn-write-us" type="button">
+          ></a>
+          <a class="button btn-write-us" href="writeus.html">
             Заблудились? Напишите нам!
-          </button>
+          </a>
         </section>
       </div>
       <section class="popup popup-writeus">
         <h2 class="visually-hidden">Связаться с нами</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
+        <form
+          class="writeus-form"
+          action="https://echo.htmlacademy.ru"
+          method="POST"
+        >
           <div class="form-wrapper">
             <p>
               <label for="name">Ваше имя:</label>
               <input
+                class="name"
                 type="text"
                 id="name"
                 name="name"
@@ -415,6 +420,7 @@
             <p>
               <label for="email">Ваш e-mail:</label>
               <input
+                class="email"
                 type="email"
                 id="email"
                 name="email"
@@ -424,6 +430,7 @@
             <p>
               <label for="text">Текст письма:</label>
               <textarea
+                class="text"
                 name="text"
                 id="text"
                 cols="30"

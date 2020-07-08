@@ -603,7 +603,7 @@ header {
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
   background-position: 196px 27px;
-  background-color:var(--basic-greenlight);
+  background-color: var(--basic-greenlight);
 }
 
 .product-delivery {
@@ -827,7 +827,8 @@ header {
   color: var(--basic-white);
   border: none;
   background-color: var(--basic-link);
-  box-shadow: 0px 1px 0px var(--basic-shadow), inset 0px 1px 0px var(--basic-shadow-inset);
+  box-shadow: 0px 1px 0px var(--basic-shadow),
+    inset 0px 1px 0px var(--basic-shadow-inset);
   cursor: pointer;
 }
 
@@ -2214,11 +2215,56 @@ header {
   left: 0;
   display: none;
   margin: auto;
-  box-shadow: 0px 4px 20px var(--basic-shadow));
+  box-shadow: 0px 4px 20px var(--basic-shadow);
 }
 
 .popup-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .visually-hidden {
