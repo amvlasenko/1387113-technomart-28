@@ -18,6 +18,7 @@
   --basic-button-hover: #ca2c37;
   --basic-black: #000000;
   --basic-link: #32425c;
+  --basic-link-hover: #293449;
   --basic-link-active: rgba(255, 255, 255, 0.5);
   --basic-footer-address: #f3f7f9;
   --basic-header: #293449;
@@ -831,7 +832,7 @@ header {
 }
 
 .switch-controls button:hover {
-  background-color: var(--basic-shadow-inset);
+  background-color: var(--basic-link-hover);
 }
 
 .switch-controls .current {
@@ -1123,7 +1124,7 @@ header {
 }
 
 .header-nav a:hover {
-  background-color: var(--basic-shadow-inset);
+  background-color: var(--basic-link-hover);
 }
 
 .header-nav a:active {
