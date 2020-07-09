@@ -465,10 +465,10 @@ header {
 }
 
 .product-slider .slide-button {
-  display: block;
   position: absolute;
   top: 188px;
   left: 24px;
+  display: block;
   width: 192px;
   padding: 11px 0 9px 1px;
 }
