@@ -230,11 +230,16 @@ header {
   box-sizing: border-box;
   width: 150px;
   padding: 9px 0 0 0;
+  background-color: var(--basic-green);
+}
+
+.header-top .order:hover {
   background-color: var(--basic-success);
 }
 
 .header-top .order:active {
   background-color: var(--basic-green);
+  color: var(--basic-link-active);
 }
 
 .header-about {
@@ -740,8 +745,8 @@ header {
 
 .metabo img {
   position: absolute;
-  top: 37px;
-  left: 3px;
+  top: 33px;
+  left: 7px;
 }
 
 /* Блок с преимуществами */
@@ -1555,44 +1560,26 @@ header {
   width: 11px;
   height: 10px;
   padding: 0;
-  border: solid var(--basic-greylight);
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
-.sorting-list .current {
-  border-color: var(--basic-red);
+.current path {
+  fill: var(--basic-red);
 }
 
 .sorting-list .to-top {
-  margin: 4px 22px 0 -22px;
-  border-top-width: 0;
-  border-bottom-width: 10px;
-  border-left-width: 5.5px;
-  border-left-color: var(--basic-controls);
-  border-right-width: 5.5px;
-  border-right-color: var(--basic-controls);
-}
-
-.sorting-list .to-top:hover {
-  border-color: var(--basic-black);
-  border-left-color: var(--basic-controls);
-  border-right-color: var(--basic-controls);
+  margin: 3px 22px 0 -22px;
 }
 
 .sorting-list .to-bottom {
-  margin: 4px 0 0 -1px;
-  border-top-width: 10px;
-  border-bottom-width: 0;
-  border-left-width: 5.5px;
-  border-left-color: var(--basic-controls);
-  border-right-width: 5.5px;
-  border-right-color: var(--basic-controls);
+  margin: 3px 0 0 -1px;
 }
 
-.sorting-list .to-bottom:hover {
-  border-color: var(--basic-black);
-  border-left-color: var(--basic-controls);
-  border-right-color: var(--basic-controls);
+.to-top:hover path,
+.to-bottom:hover path {
+  fill: var(--basic-black);
 }
 
 .item-list {
@@ -1750,7 +1737,7 @@ header {
 }
 
 .item .buy:active {
-  background-color: #518534;
+  background-color: var(--basic-shadow-buy-active);
 }
 
 .item .to-bookmarks:hover {
